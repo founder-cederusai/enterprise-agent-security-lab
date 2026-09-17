@@ -21,6 +21,34 @@ This lab asks questions such as:
 - Are consequential actions observable, attributable, and auditable?
 - Do defensive controls still work under adversarial conditions?
 
+## Start here
+
+- **[Flagship scenario library](scenarios/README.md)** — 12 detailed case files across HR, finance, RAG, MCP/tools, IT, legal, analytics, and industrial AI
+- **[102-scenario research catalog](catalog/attack-catalog.md)** — full defensive testing backlog
+- **[Threat model](docs/threat-model.md)** — assets, trust boundaries, actors, and failure modes
+- **[Testing methodology](docs/testing-methodology.md)** — baseline → adversarial condition → detection → mitigation → retest
+- **[Controls catalog](catalog/controls-catalog.md)** — reusable architectural control patterns
+- **[Portfolio summary](portfolio/project-summary.md)** — concise project framing for hiring managers
+
+## Flagship cases
+
+The first detailed cases are intentionally cross-functional rather than purely industrial:
+
+- **A11 — Email-body injection**
+- **A18 — Unauthorized-document retrieval**
+- **A26 — Excessive tool permissions**
+- **A33 — User context lost across invocation**
+- **A41 — Vendor banking-information conflict**
+- **A48 — Recruiting résumé injection**
+- **A57 — Contract clause instruction injection**
+- **A66 — Ticket-content indirect injection**
+- **A76 — Natural-language authorization bypass**
+- **A89 — Stale historian state**
+- **A90 — Safety-system authority boundary**
+- **A92 — Autonomous action escalation**
+
+See the **[scenario index](scenarios/README.md)** for direct links and the core security question behind each case.
+
 ## Scope
 
 The lab models a fictional organization, **Northstar Industries**, with synthetic corporate and operational systems:
@@ -138,7 +166,17 @@ enterprise-agent-security-lab/
 │   ├── controls-catalog.md
 │   └── framework-mapping.md
 ├── scenarios/
-│   └── TEMPLATE.md
+│   ├── README.md
+│   ├── TEMPLATE.md
+│   ├── hr/
+│   ├── finance/
+│   ├── rag/
+│   ├── tools/
+│   ├── legal/
+│   ├── it-service/
+│   ├── analytics/
+│   ├── indirect-prompt-injection/
+│   └── industrial/
 └── portfolio/
     ├── project-summary.md
     ├── resume-bullets.md
@@ -150,7 +188,7 @@ enterprise-agent-security-lab/
 
 **Phase 1 — Portfolio and research framework:** in progress.
 
-Phase 1 deliberately emphasizes documentation, threat modeling, test design, defensive controls, and evidence standards before any implementation work.
+The project currently includes a 102-scenario research backlog and 12 detailed flagship case designs. All case files remain **DESIGNED** until actually executed in a synthetic or authorized environment.
 
 Future phases may add safe, local, synthetic demonstrations that show failure → detection → mitigation → retest without targeting real organizations or systems.
 
